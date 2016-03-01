@@ -18,27 +18,27 @@ public class FictionalBookBuilder implements BookBuilder{
   book=new Book();
  }
  public void buildTableOfContent() {
-  System.out.println("printing fictional table of content");
-  book.setTableOfContent("fictional table of content");
+  System.out.println("Imprimir la tabla de contenidos de ficción");
+  book.setTableOfContent("Tabla de contenidos de ficción");
  }
  
  public void buildPreface(){
-  System.out.println("printing preface");
-  book.setTableOfContent("preface");
+  System.out.println("Prefacio de impresión");
+  book.setTableOfContent("Prefacio");
  }
  public void buildIntroduction() {
-  System.out.println("printing fictional introduction");
-  book.setTableOfContent("fictional introduction");
+  System.out.println("Imprimir introducción de ficción");
+  book.setTableOfContent("Introducción de ficción");
  }
  
  public void buildChapters() {
-  System.out.println("printing fictional chapters");
-  book.setChapters("fictional chapters");
+  System.out.println("Imprimir capítulos de ficción");
+  book.setChapters("Capítulos de ficción");
  }
  
  public void buildGlossary() {
-  System.out.println("printing fictional glossary");
-  book.setGlossary("Fictional glossary");
+  System.out.println("Imprimir glosario de ficción");
+  book.setGlossary("Glosario de ficción");
  }
  
  public Book getBook() {

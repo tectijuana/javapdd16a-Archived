@@ -17,18 +17,18 @@ public class BuilderDesignPatternMain {
     public static void main(String[] args) {
         // TODO code application logic here
   
-  System.out.println("Printing technical book:");
+  System.out.println("Impresión de libro técnico:");
   BookBuilder technialbookBuilder=(BookBuilder) new TechnicalBookBuilder();
   BookWriter technicalBookWriter=new BookWriter(technialbookBuilder);
   technicalBookWriter.printBook();
   Book technicalbook=technicalBookWriter.getBook();
-  System.out.println("Technical Book Printed:"+technicalbook);
+  System.out.println("Libro Impreso técnica:"+technicalbook);
   System.out.println("******************************************");
-  System.out.println("Printing fictional book:");
+  System.out.println("La impresión de libros de ficción:");
   FictionalBookBuilder fictionalbookBuilder=new FictionalBookBuilder();
   BookWriter fictionalBookWriter=new BookWriter(fictionalbookBuilder);
   fictionalBookWriter.printBook();
   Book fictionalbook=fictionalBookWriter.getBook();
-  System.out.println("Fictionalbook book printed:"+fictionalbook);
+  System.out.println("Libro libro de ficción impreso:"+fictionalbook);
  }
 }

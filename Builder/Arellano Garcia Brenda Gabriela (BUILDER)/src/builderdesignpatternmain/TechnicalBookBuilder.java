@@ -18,27 +18,27 @@ public class TechnicalBookBuilder implements BookBuilder{
   book=new Book();
  }
  public void buildTableOfContent() {
-  System.out.println("printing technical table of content");
-  book.setTableOfContent("technical table of content");
+  System.out.println("Imprimir mesa técnica del contenido");
+  book.setTableOfContent("Mesa técnica del contenido");
  }
  
  public void buildPreface() {
-  System.out.println("printing preface");
-  book.setTableOfContent("preface");
+  System.out.println("Prefacio de impresión");
+  book.setTableOfContent("Prefacio");
  }
  public void buildIntroduction() {
-  System.out.println("printing technical introduction");
-  book.setTableOfContent("technical introduction");
+  System.out.println("Imprimir introducción técnica");
+  book.setTableOfContent("Introducción técnica");
  }
  
  public void buildChapters() {
-  System.out.println("printing technical chapters");
-  book.setChapters("technical chapters");
+  System.out.println("Imprimir capítulos técnicos");
+  book.setChapters("Capítulos técnicos");
  }
  
  public void buildGlossary() {
-  System.out.println("printing technical glossary");
-  book.setGlossary("Technical glossary");
+  System.out.println("Imprimir glosario técnico");
+  book.setGlossary("Glosario técnico");
  }
  
  public Book getBook() {
