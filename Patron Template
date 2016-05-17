@@ -1,0 +1,5 @@
+En el patrón Template, una clase abstracta expone via(s)/plantilla(s)definidas para ejecutar sus métodos. 
+Las subclases pueden sobreescribir (override) la implementación del método por necesidad pero 
+la invocación es estar en la misma forma como se define por una clase abstracta.
+Este patrón viene bajo la categoria de patrón de comportamiento.
+
