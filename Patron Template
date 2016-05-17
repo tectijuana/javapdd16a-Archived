@@ -3,3 +3,74 @@ Las subclases pueden sobreescribir (override) la implementación del método por
 la invocación es estar en la misma forma como se define por una clase abstracta.
 Este patrón viene bajo la categoria de patrón de comportamiento.
 
+---------------Codigo de ejemplo en Java------------------------------
+
+//Creamos una clase abstracta llamada Game
+public abstract class Game {
+   abstract void initialize();
+   abstract void startPlay();
+   abstract void endPlay();
+
+   //template method
+   public final void play(){
+
+      //initialize the game
+      initialize();
+
+      //start game
+      startPlay();
+
+      //end game
+      endPlay();
+   }
+}
+
+
+//Creamos una clase de juego (En este caso sera Beisbol) y le damos extension o herencia de Game 
+public class BaseBall extends Game {
+
+   @Override
+   void endPlay() {
+      System.out.println("BaseBall Game Finished!");
+   }
+
+   @Override
+   void initialize() {
+      System.out.println("BaseBall Game Initialized! Start playing.");
+   }
+
+   @Override
+   void startPlay() {
+      System.out.println("BaseBall Game Started. Enjoy the game!");
+   }
+}
+
+
+//Creamos una clase de juego (En este caso sera futbol soccer) y le damos extension o herencia de Game 
+public class Soccer extends Game {
+
+   @Override
+   void endPlay() {
+      System.out.println("Soccer Game Finished!");
+   }
+
+   @Override
+   void initialize() {
+      System.out.println("Soccer Game Initialized! Start playing.");
+   }
+
+   @Override
+   void startPlay() {
+      System.out.println("Soccer Game Started. Enjoy the game!");
+   }
+}
+
+-------------Resultado al compilar-------------------
+
+BaseBall Game Initialized! Start playing.
+BaseBall Game Started. Enjoy the game!
+BaseBall Game Finished!
+
+Soccer Game Initialized! Start playing.
+Soccer Game Started. Enjoy the game!
+Soccer Game Finished!
